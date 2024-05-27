@@ -14,7 +14,7 @@ const windSpeed = document.querySelector(".wind-speed");
 const humidity = document.querySelector(".humidity");
 
 window.addEventListener("load", () => {
-    getData("Ho Chi Minh", API_ID);
+    getData("Ha Noi", API_ID);
 });
 
 searchInput.addEventListener("change", (e) => {
