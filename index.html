@@ -1,368 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cong Tien</title>
-        <script src="https://use.fontawesome.com/eb06b48c58.js"></script>
-        <link rel="stylesheet" href="./assets/css/index.css" />
-        <link
-            rel="shortcut icon"
-            href="./images/avt-circle.webp"
-            type="image"
-        />
-        <script
-            async
-            defer
-            crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
-            nonce="TY6PFMoA"
-        ></script>
-    </head>
-    <body>
-        <div id="circle-cursor">
-            <div id="circle-cursor-dot"></div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cong Tien</title>
+    <script src="https://use.fontawesome.com/eb06b48c58.js"></script>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="shortcut icon" href="./images/avt-circle.webp" type="image" style="object-fit: cover" />
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+        nonce="TY6PFMoA"></script>
+</head>
+
+<body>
+    <div id="circle-cursor">
+        <div id="circle-cursor-dot"></div>
+    </div>
+    <span class="project-tooltip"></span>
+    <div class="preload">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </div>
+    <div id="loading">
+        <div class="loading__inner">
+            <div class="loading__inner-logo">
+                <h3>LE CONG TIEN</h3>
+            </div>
         </div>
-        <span class="project-tooltip"></span>
-        <div class="preload">
-            <div class="left"></div>
-            <div class="middle"></div>
-            <div class="right"></div>
-        </div>
-        <div id="loading">
-            <img
-                id="loading-image"
-                src="./images/loading.svg"
-                alt="Loading Screen"
-            />
-        </div>
-        <div class="description-modal">
-            <span class="description-modal__close fa fa-times-circle-o"></span>
-            <div class="description-modal__details">
-                <div class="description-modal__details-knowledge">
-                    <div class="knowledge-col">
-                        <h3 class="knowledge-col__title">education</h3>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">
-                                FPT Polytechnic Ha Noi (WEB DESIGN/PHP)
-                            </h3>
-                            <p class="info-year">
-                                Student <span>• 2021 - 2024</span>
-                            </p>
+    </div>
+    <div class="description-modal">
+        <span class="description-modal__close fa fa-times-circle-o"></span>
+        <div class="description-modal__details">
+            <div class="description-modal__details-knowledge">
+                <div class="knowledge-col">
+                    <h3 class="knowledge-col__title">education</h3>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">
+                            FPT Polytechnic Ha Noi (WEB DESIGN/PHP)
+                        </h3>
+                        <p class="info-year">
+                            Student <span>• 2021 - 2024</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="knowledge-col">
+                    <h3 class="knowledge-col__title">skills</h3>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">General</h3>
+                        <div class="info-tags">
+                            <span class="tag">Back-end Dev</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Software Engineering</span>
                         </div>
                     </div>
-                    <div class="knowledge-col">
-                        <h3 class="knowledge-col__title">skills</h3>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">General</h3>
-                            <div class="info-tags">
-                                <span class="tag">Back-end Dev</span>
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">Software Engineering</span>
-                            </div>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">Languages</h3>
+                        <div class="info-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
                         </div>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">Languages</h3>
-                            <div class="info-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">PHP</span>
-                            </div>
+                    </div>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">Database</h3>
+                        <div class="info-tags">
+                            <span class="tag">MySQL</span>
                         </div>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">Database</h3>
-                            <div class="info-tags">
-                                <span class="tag">MySQL</span>
-                            </div>
+                    </div>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">Frameworks & Libraries</h3>
+                        <div class="info-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">CodeIgniter</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">JQuery</span>
                         </div>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">Frameworks & Libraries</h3>
-                            <div class="info-tags">
-                                <span class="tag">Laravel</span>
-                                <span class="tag">CodeIgniter</span>
-                                <span class="tag">Bootstrap</span>
-                                <span class="tag">Tailwind CSS</span>
-                                <span class="tag">JQuery</span>
-                            </div>
-                        </div>
-                        <div class="knowledge-col__info">
-                            <h3 class="info-name">Tools</h3>
-                            <div class="info-tags">
-                                <span class="tag">Git</span>
-                                <span class="tag">VS Code</span>
-                                <span class="tag">PHP Storm</span>
-                                <span class="tag">Figma</span>
-                            </div>
+                    </div>
+                    <div class="knowledge-col__info">
+                        <h3 class="info-name">Tools</h3>
+                        <div class="info-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">VS Code</span>
+                            <span class="tag">PHP Storm</span>
+                            <span class="tag">Figma</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="mobile-menu">
-            <div class="mobile-menu__inner">
-                <a href="./index.html"
-                    ><h3 class="mobile-menu__inner-logo">CONG TIEN</h3></a
-                >
-                <div class="mobile-menu__inner-menu">
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <a href="./index.html">
+                <h3 class="mobile-menu__inner-logo">CONG TIEN</h3>
+            </a>
+            <div class="mobile-menu__inner-menu">
+                <ul class="menu-list">
+                    <li>
+                        <button class="button-darkmode">
+                            <span class="fa fa-sun-o button-darkmode-icon"></span>
+                        </button>
+                    </li>
+                    <li class="menu-list__item" data-filter="home">
+                        <a href="#" class="item-link"><span class="fa fa-home"></span></a>
+                    </li>
+                    <li class="menu-list__item" data-filter="about">
+                        <a href="#" class="item-link"><span class="fa fa-id-card"></span></a>
+                    </li>
+                    <li class="menu-list__item" data-filter="portfolio">
+                        <a href="#" class="item-link"><span class="fa fa-briefcase"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="left-part">
+            <div class="left-part__inner">
+                <a href="./index.html">
+                    <div class="left-part__inner-logo">
+                        <h3>CONG TIEN</h3>
+                    </div>
+                </a>
+                <div class="left-part__inner-menu">
                     <ul class="menu-list">
-                        <li>
-                            <button class="button-darkmode">
-                                <span
-                                    class="fa fa-sun-o button-darkmode-icon"
-                                ></span>
-                            </button>
-                        </li>
                         <li class="menu-list__item" data-filter="home">
-                            <a href="#" class="item-link"
-                                ><span class="fa fa-home"></span
-                            ></a>
+                            <a href="#" class="item-link">Home</a>
                         </li>
                         <li class="menu-list__item" data-filter="about">
-                            <a href="#" class="item-link"
-                                ><span class="fa fa-id-card"></span
-                            ></a>
+                            <a href="#" class="item-link">About</a>
                         </li>
                         <li class="menu-list__item" data-filter="portfolio">
-                            <a href="#" class="item-link"
-                                ><span class="fa fa-briefcase"></span
-                            ></a>
+                            <a href="#" class="item-link">Portfolio</a>
+                        </li>
+                        <li>
+                            <button class="button-darkmode-switch">
+                                <span class="fa fa-sun-o"></span>
+                                <div class="button-darkmode-tray">
+                                    <div class="button-darkmode-switcher"></div>
+                                </div>
+                                <span class="fa fa-moon-o"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-part__inner-copyright">
+                    <p class="menu-copyright__text">
+                        © 2023 Created by Le Cong Tien
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="section home" id="home">
+                <div class="home__content">
+                    <div class="home__content-avt"></div>
+                    <div class="home__content-details">
+                        <h3 class="home__content-details__name">
+                            LE CONG TIEN
+                        </h3>
+                        <p class="home__content-details__job">
+                            Creative Backend Developer based in Ha Noi City
+                        </p>
+                        <div class="home__content-details__social">
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/lecongtien.dev/" target="_blank">
+                                        <span class="fa fa-facebook" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://github.com/congtiendev" target="_blank">
+                                        <span class="fa fa-github" aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section about" id="about">
+                <div class="about__main">
+                    <img src="./images/cover.jpg" alt="Le Cong Tien" class="about__main-img" />
+                </div>
+                <div class="about__description">
+                    <div class="about__description-name">
+                        Le Cong Tien & Back-end Developer
+                    </div>
+                    <div class="about__description-inner">
+                        <div class="inner-left">
+                            <p>
+                                Hi! My name is Le Cong Tien and I have
+                                recently graduated from FPT Polytechnic. I
+                                have a strong passion for back-end web
+                                development, and I've been learning back-end
+                                for 2 years and have 1 year of experience
+                                working in this field through the projects I
+                                have participated in. One of my favorite
+                                quotes is from Linus Torvalds: “Talk is
+                                cheap. Show me the code !”.
+                            </p>
+                            <a href="#">
+                                <div class="button learn-more">
+                                    Learn More
+                                </div>
+                            </a>
+                            <a href="./CV_LE_CONG_TIEN_PHP_DEVELOPER.pdf" download>
+                                <div class="button">Download CV</div>
+                            </a>
+                        </div>
+                        <div class="inner-right">
+                            <ul>
+                                <li>
+                                    <p><span>Birthday:</span>07/02/2003</p>
+                                </li>
+                                <li>
+                                    <p><span>Age:</span>21</p>
+                                </li>
+                                <li>
+                                    <p><span>Address:</span>Ha Noi City</p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Email:</span>
+                                        <a href="mailto:lecongtien.dev@gmail.com">lecongtien.dev@gmail.com"
+                                        </a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Phone:</span>
+                                        <a href="tel:0965067842">0965067842</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span>Study:</span>
+                                        FPT Polytechnic
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section portfolio" id="portfolio">
+                <div class="portfolio__title">
+                    <div class="title-flex">
+                        <div class="title-flex__left">
+                            <span>PORTFOLIO</span>
+                            <h3>Creative Portfolio</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__galery">
+                    <ul class="portfolio__galery-list">
+                        <li class="all app galery-item galery-item-tooltip" data-name="CRM">
+                            <div class="item__img">
+                                <div class="source-demo">
+                                    <!-- <a
+                                        href="./PROJECTS/CRM/index.html"
+                                        target="_blank"
+                                        class="source-demo__button"
+                                    >
+                                        <img
+                                            src="./images/web-source.png"
+                                            alt="Source"
+                                        />
+                                    </a> -->
+                                    <a href="./PROJECTS/CRM/index.html" target="_blank" class="source-demo__button">
+                                        <img src="./images/web-demo.png" alt="Demo" />
+                                    </a>
+                                </div>
+                                <img id="crm" src="./PROJECTS/CRM/images/cham-cong.png" alt="CRM" />
+                            </div>
+                            <p class="item__name" style="text-align:center;margin-top:10px;">CRM - Business Management
+                            </p>
+                        </li>
+
+                        <li class="all app galery-item galery-item-tooltip" data-name="nentangchuyendoiso">
+                            <div class="item__img">
+                                <div class="source-demo">
+                                    <!-- <a
+                                        href="./PROJECTS/CRM/index.html"
+                                        target="_blank"
+                                        class="source-demo__button"
+                                    >
+                                        <img
+                                            src="./images/web-source.png"
+                                            alt="Source"
+                                        />
+                                    </a> -->
+                                    <a href="./PROJECTS/CRM/index.html" target="_blank" class="source-demo__button">
+                                        <img src="./images/web-demo.png" alt="Demo" />
+                                    </a>
+                                </div>
+                                <img id="nentangchuyendoiso" src="./PROJECTS/Nentangchuyendoiso/images/home.png" alt="CRM" />
+                            </div>
+                            <p class="item__name" style="text-align:center;margin-top:10px;">
+                               nentangchuyendoiso.com.vn
+                            </p>
+                        </li>
+
+                        <li class="all app galery-item galery-item-tooltip" data-name="studyspace">
+                            <div class="item__img">
+                                <div class="source-demo">
+                                    <a href="./PROJECTS/StudySpace/index.html" target="_blank" class="source-demo__button">
+                                        <img src="./images/web-demo.png" alt="Demo" />
+                                    </a>
+                                </div>
+                                <img id="studyspace" src="./PROJECTS/StudySpace/images/home.png" alt="CRM" />
+                            </div>
+                            <p class="item__name" style="text-align:center;margin-top:10px;">
+                                StudySpace - E-Learning Platform
+                            </p>
+                        </li>
+
+                        <li class="all app galery-item galery-item-tooltip" data-name="Calculator">
+                            <div class="item__img">
+                                <div class="source-demo">
+                                    <a href="./PROJECTS/Calculator/index.html" target="_blank"
+                                        class="source-demo__button">
+                                        <img src="./images/web-source.png" alt="Source" />
+                                    </a>
+                                    <a href="./PROJECTS/Calculator/index.html" target="_blank"
+                                        class="source-demo__button">
+                                        <img src="./images/web-demo.png" alt="Demo" />
+                                    </a>
+                                </div>
+                                <img id="calculator" src="./images/calculator-bg.webp" alt="Calculator" />
+                            </div>
+                            <p class="item__name" style="text-align:center;margin-top:10px;">
+                                Calculator App
+                            </p>
+                        </li>
+
+                        <li class="all app galery-item galery-item-tooltip" data-name="Weather Forecast">
+                            <div class="item__img">
+                                <div class="source-demo">
+                                    <a href="./PROJECTS/WEATHER FORECAST APP/index.html" target="_blank"
+                                        class="source-demo__button">
+                                        <img src="./images/web-demo.png" alt="Demo" />
+                                    </a>
+                                </div>
+                                <img id="weather-forecast" src="./images/weatherForecast-bg.webp"
+                                    alt="Weather Forecast" />
+
+                            </div>
+                            <p class="item__name" style="text-align:center;margin-top:10px;">
+                                Weather Forecast App
+                            </p>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="left-part">
-                <div class="left-part__inner">
-                    <a href="./index.html"
-                        ><div class="left-part__inner-logo">
-                            <h3>CONG TIEN</h3>
-                        </div></a
-                    >
-                    <div class="left-part__inner-menu">
-                        <ul class="menu-list">
-                            <li class="menu-list__item" data-filter="home">
-                                <a href="#" class="item-link">Home</a>
-                            </li>
-                            <li class="menu-list__item" data-filter="about">
-                                <a href="#" class="item-link">About</a>
-                            </li>
-                            <li class="menu-list__item" data-filter="portfolio">
-                                <a href="#" class="item-link">Portfolio</a>
-                            </li>
-                            <li>
-                                <button class="button-darkmode-switch">
-                                    <span class="fa fa-sun-o"></span>
-                                    <div class="button-darkmode-tray">
-                                        <div
-                                            class="button-darkmode-switcher"
-                                        ></div>
-                                    </div>
-                                    <span class="fa fa-moon-o"></span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="left-part__inner-copyright">
-                        <p class="menu-copyright__text">
-                            © 2023 Created by Le Cong Tien
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="right-part">
-                <div class="section home" id="home">
-                    <div class="home__content">
-                        <div class="home__content-avt"></div>
-                        <div class="home__content-details">
-                            <h3 class="home__content-details__name">
-                                LE CONG TIEN
-                            </h3>
-                            <p class="home__content-details__job">
-                                Creative Backend Developer based in Ha Noi City
-                            </p>
-                            <div class="home__content-details__social">
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="https://www.facebook.com/lecongtien.dev/"
-                                            target="_blank"
-                                        >
-                                            <span
-                                                class="fa fa-facebook"
-                                                aria-hidden="true"
-                                            ></span>
-                                        </a>
-                                    </li>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
 
-                                    <li>
-                                        <a
-                                            href="https://github.com/congtiendev"
-                                            target="_blank"
-                                        >
-                                            <span
-                                                class="fa fa-github"
-                                                aria-hidden="true"
-                                            ></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section about" id="about">
-                    <div class="about__main">
-                        <img
-                            src="./images/cover.jpg"
-                            alt="Le Cong Tien"
-                            class="about__main-img"
-                        />
-                    </div>
-                    <div class="about__description">
-                        <div class="about__description-name">
-                            Le Cong Tien & Back-end Developer
-                        </div>
-                        <div class="about__description-inner">
-                            <div class="inner-left">
-                                <p>
-                                    Hi! My name is Le Cong Tien and I have
-                                    recently graduated from FPT Polytechnic. I
-                                    have a strong passion for back-end web
-                                    development, and I've been learning back-end
-                                    for 2 years and have 1 year of experience
-                                    working in this field through the projects I
-                                    have participated in. One of my favorite
-                                    quotes is from Linus Torvalds: “Talk is
-                                    cheap. Show me the code !”.
-                                </p>
-                                <a href="#">
-                                    <div class="button learn-more">
-                                        Learn More
-                                    </div>
-                                </a>
-                                <a
-                                    href="./CV_LE_CONG_TIEN_PHP_DEVELOPER.pdf"
-                                    download
-                                >
-                                    <div class="button">Download CV</div>
-                                </a>
-                            </div>
-                            <div class="inner-right">
-                                <ul>
-                                    <li>
-                                        <p><span>Birthday:</span>07/02/2003</p>
-                                    </li>
-                                    <li>
-                                        <p><span>Age:</span>21</p>
-                                    </li>
-                                    <li>
-                                        <p><span>Address:</span>Ha Noi City</p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Email:</span>
-                                            <a
-                                                href="mailto:lecongtien.dev@gmail.com"
-                                                >lecongtien.dev@gmail.com"
-                                            </a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Phone:</span>
-                                            <a href="tel:0965067842"
-                                                >0965067842</a
-                                            >
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Study:</span>
-                                            FPT Polytechnic
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section portfolio" id="portfolio">
-                    <div class="portfolio__title">
-                        <div class="title-flex">
-                            <div class="title-flex__left">
-                                <span>PORTFOLIO</span>
-                                <h3>Creative Portfolio</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio__galery">
-                        <ul class="portfolio__galery-list">
-                            <li
-                                class="all app galery-item galery-item-tooltip"
-                                data-name="Calculator"
-                            >
-                                <div class="item__img">
-                                    <div class="source-demo">
-                                        <a
-                                            href="./PROJECTS/Calculator/index.html"
-                                            target="_blank"
-                                            class="source-demo__button"
-                                        >
-                                            <img
-                                                src="./images/web-source.png"
-                                                alt="Source"
-                                            />
-                                        </a>
-                                        <a
-                                            href="./PROJECTS/Calculator/index.html"
-                                            target="_blank"
-                                            class="source-demo__button"
-                                        >
-                                            <img
-                                                src="./images/web-demo.png"
-                                                alt="Demo"
-                                            />
-                                        </a>
-                                    </div>
-                                    <img
-                                        id="calculator"
-                                        src="./images/calculator-bg.webp"
-                                        alt="Calculator"
-                                    />
-                                </div>
-                            </li>
-                            <li
-                                class="all app galery-item galery-item-tooltip"
-                                data-name="Weather Forecast"
-                            >
-                                <div class="item__img">
-                                    <div class="source-demo">
-                                        <a
-                                            href="./PROJECTS/WEATHER FORECAST APP/index.html"
-                                            target="_blank"
-                                            class="source-demo__button"
-                                        >
-                                            <img
-                                                src="./images/web-demo.png"
-                                                alt="Demo"
-                                            />
-                                        </a>
-                                    </div>
-                                    <img
-                                        id="weather-forecast"
-                                        src="./images/weatherForecast-bg.webp"
-                                        alt="Weather Forecast"
-                                    />
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./assets/js/index.js"></script>
-    </body>
 </html>

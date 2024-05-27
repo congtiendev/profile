@@ -1376,6 +1376,12 @@ h3 {
     .wrapper .right-part .portfolio__galery-list li:hover #calculator {
         content: url(../../images/calculatorGIF.gif);
     }
+    .wrapper .right-part .portfolio__galery-list li:hover #crm {
+        content: url(../../PROJECTS/CRM/images/task.png);
+    }
+    .wrapper .right-part .portfolio__galery-list li:hover #nentangchuyendoiso {
+        content: url(../../PROJECTS/Nentangchuyendoiso/images/calamviec.png);
+    }
     .wrapper .right-part .portfolio__galery-list li:hover #hangman {
         content: url(../../images/hangmanGIF.gif);
     }
