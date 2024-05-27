@@ -1,0 +1,91 @@
+.mobile-menu {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--mobile-menu-box-shadow);
+    padding: 20px 40px;
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &-logo {
+            font-weight: 900;
+            font-size: 22px;
+            color: var(--heading-color);
+
+            @media (max-width: 476px) {
+                font-size: 16px;
+            }
+        }
+
+        &-menu {
+            .menu-list {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .button-darkmode {
+                    cursor: pointer;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                &__item {
+                    margin-left: 20px;
+
+                    .item-link {
+                        span {
+                            color: var(--text-color);
+                        }
+                        font-size: 15px;
+                        transition: all 0.1s ease-in-out;
+                    }
+
+                    &.active {
+                        .item-link {
+                            span {
+                                color: var(--heading-color);
+                            }
+                        }
+                    }
+                    &:hover {
+                        .item-link {
+                            span {
+                                color: var(--heading-color);
+                            }
+                        }
+                    }
+
+                    @media (max-width: 576px) {
+                        margin-left: 10px;
+                    }
+                }
+
+                &__item:first-child {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1201px) {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 20px;
+    }
+}

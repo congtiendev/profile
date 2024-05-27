@@ -1,0 +1,1010 @@
+<!-- 
+████████╗██████╗  █████╗ ███╗   ██╗    ██████╗ ██╗  ██╗██╗   ██╗ ██████╗ ███╗   ██╗ ██████╗     ██████╗ ██╗███╗   ██╗██╗  ██╗
+╚══██╔══╝██╔══██╗██╔══██╗████╗  ██║    ██╔══██╗██║  ██║██║   ██║██╔═══██╗████╗  ██║██╔════╝     ██╔══██╗██║████╗  ██║██║  ██║
+   ██║   ██████╔╝███████║██╔██╗ ██║    ██████╔╝███████║██║   ██║██║   ██║██╔██╗ ██║██║  ███╗    ██║  ██║██║██╔██╗ ██║███████║
+   ██║   ██╔══██╗██╔══██║██║╚██╗██║    ██╔═══╝ ██╔══██║██║   ██║██║   ██║██║╚██╗██║██║   ██║    ██║  ██║██║██║╚██╗██║██╔══██║
+   ██║   ██║  ██║██║  ██║██║ ╚████║    ██║     ██║  ██║╚██████╔╝╚██████╔╝██║ ╚████║╚██████╔╝    ██████╔╝██║██║ ╚████║██║  ██║
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝     ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
+                                                                                                                              -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dinh Tran</title>
+        <script src="https://use.fontawesome.com/eb06b48c58.js"></script>
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <link rel="shortcut icon" href="./images/avt-circle.webp" />
+        <script
+            async
+            defer
+            crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+            nonce="TY6PFMoA"
+        ></script>
+    </head>
+    <body>
+        <div id="circle-cursor">
+            <div id="circle-cursor-dot"></div>
+        </div>
+        <span class="project-tooltip"></span>
+        <div class="preload">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
+        <div id="loading">
+            <img
+                id="loading-image"
+                src="./images/loading.svg"
+                alt="Loading Screen"
+            />
+        </div>
+        <div class="description-modal">
+            <span class="description-modal__close fa fa-times-circle-o"></span>
+            <div class="description-modal__details">
+                <div class="description-modal__details-knowledge">
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">education</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                University Of Science - Vietnam National
+                                University
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•Sep 2019 - Present</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">My Lac Senior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2016 - 2019</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">My Lac Junior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2012 - 2016</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                My Lac Primary High School
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•2007 - 2012</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">skills</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">General</h3>
+                            <div class="info-tags">
+                                <span class="tag">Front-end Dev</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Software Engineering</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Design</h3>
+                            <div class="info-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Adobe Photoshop</span>
+                                <span class="tag">Balsamiq</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Engineering</h3>
+                            <div class="info-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">React Js</span>
+                                <span class="tag">Jquery</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-modal__details-certificates">
+                    <h3 class="certificates-title">certificates</h3>
+                    <div class="certificates">
+                        <img
+                            class="certificates-img"
+                            src="./images/codelearn0.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn1.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn2.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn3.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn4.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn5.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn6.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn7.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn8.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn9.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn10.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/bootstrap.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/algorithmToolbox.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/frontendBasic.webp"
+                            alt="Certificate Image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <a href="./index.html"
+                    ><h3 class="mobile-menu__inner-logo">DINH TRAN</h3></a
+                >
+                <div class="mobile-menu__inner-menu">
+                    <ul class="menu-list">
+                        <li>
+                            <button class="button-darkmode">
+                                <span
+                                    class="fa fa-sun-o button-darkmode-icon"
+                                ></span>
+                            </button>
+                        </li>
+                        <li class="menu-list__item" data-filter="home">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-home"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="about">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-id-card"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="portfolio">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-briefcase"></span
+                            ></a>
+                        </li>
+                        <li class="menu-list__item" data-filter="contact">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-envelope"></span
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="left-part">
+                <div class="left-part__inner">
+                    <a href="./index.html"
+                        ><div class="left-part__inner-logo">
+                            <h3>DINH TRAN</h3>
+                        </div></a
+                    >
+                    <div class="left-part__inner-menu">
+                        <ul class="menu-list">
+                            <li class="menu-list__item" data-filter="home">
+                                <a href="#" class="item-link">Home</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="about">
+                                <a href="#" class="item-link">About</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="portfolio">
+                                <a href="#" class="item-link">Portfolio</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="contact">
+                                <a href="#" class="item-link">Contact</a>
+                            </li>
+                            <li>
+                                <button class="button-darkmode-switch">
+                                    <span class="fa fa-sun-o"></span>
+                                    <div class="button-darkmode-tray">
+                                        <div
+                                            class="button-darkmode-switcher"
+                                        ></div>
+                                    </div>
+                                    <span class="fa fa-moon-o"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="left-part__inner-copyright">
+                        <p class="menu-copyright__text">
+                            © 2021 Created by Tran Phuong Dinh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="section home" id="home">
+                    <div class="home__content">
+                        <div class="home__content-avt"></div>
+                        <div class="home__content-details">
+                            <h3 class="home__content-details__name">
+                                TRAN PHUONG DINH
+                            </h3>
+                            <p class="home__content-details__job">
+                                Creative Front-end Developer based in Ho Chi
+                                Minh City
+                            </p>
+                            <div class="home__content-details__social">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/DinhRamos.IClow/"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-facebook"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-youtube"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-github"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section about" id="about">
+                    <div class="about__main">
+                        <img
+                            src="./images/cover.webp"
+                            alt="Tran Phuong Dinh"
+                            class="about__main-img"
+                        />
+                    </div>
+                    <div class="about__description">
+                        <div class="about__description-name">
+                            Tran Phuong Dinh & Front-end Developer
+                        </div>
+                        <div class="about__description-inner">
+                            <div class="inner-left">
+                                <p>
+                                    Hi ! My name is Tran Phuong Dinh, and I am a
+                                    third year student at Ho Chi Minh University
+                                    Of Science. I have a strong passion about
+                                    Front-end web development, and I've learnt
+                                    Front-end for one year and I got some
+                                    certificates of HTML-CSS-JS and Front-end
+                                    frameworks. One of my favorite quotes is
+                                    from Linus Torvalds: “Talk is cheap. Show me
+                                    the code !”.
+                                </p>
+                                <a href="#">
+                                    <div class="button learn-more">
+                                        Learn More
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="button">Download CV</div>
+                                </a>
+                            </div>
+                            <div class="inner-right">
+                                <ul>
+                                    <li>
+                                        <p><span>Birthday:</span>02/06/2001</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Age:</span>20</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Address:</span>Ho Chi Minh
+                                            City
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Email:</span
+                                            >dinhblade123@gmail.com
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span>Phone:</span>(+84)949996310</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Study:</span>Vietnam National
+                                            University - University Of Science
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section portfolio" id="portfolio">
+                    <div class="portfolio__title">
+                        <div class="title-flex">
+                            <div class="title-flex__left">
+                                <span>PORTFOLIO</span>
+                                <h3>Creative Portfolio</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-filter">
+                            <ul class="portfolio-filter__list">
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="all"
+                                >
+                                    <a href="#">all</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="page"
+                                >
+                                    <a href="#">templates</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="app"
+                                >
+                                    <a href="#">apps</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="others"
+                                >
+                                    <a href="#">others</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio__galery">
+                        <ul class="portfolio__galery-list">
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-name="Movies.net"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/movies.net"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/movies.net/index.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="movies-page"
+                                        src="./images/movie-page-bg.webp"
+                                        alt="Movies.net"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url=""
+                                data-name="Documentation Page"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/DocumentationPage"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/DocumentationPage/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="documentation-page"
+                                        src="./images/documentation-page-bg.webp"
+                                        alt="Documentation Page"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-name="Pooch Care Template"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/PoochCare-template"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/PoochCare-template/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="poochcare"
+                                        src="./images/poochcare-bg.png"
+                                        alt="Pooch Care Template"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-name="Masterwork Template"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/Masterwork-template"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/Masterwork-template/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="masterwork"
+                                        src="./images/masterwork-bg.png"
+                                        alt="Masterwork Template"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-name="Imroz Template"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/Imroz-template"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/Imroz-template/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="imroz"
+                                        src="./images/imroz-bg.png"
+                                        alt="Imroz Template"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Bad Apple"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/BadAppleAscii"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FDinhRamos.IClow%2Fvideos%2F2887868274829497%2F&show_text=true&appId"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="bad-apple"
+                                        src="./images/badApple-bg.webp"
+                                        alt="Bad Apple"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Simple Paint GDI"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/MySimplePaint_GDI_WIN32"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://www.youtube.com/embed/EPlcAJn45Mo"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="simple-paint"
+                                        src="./images/SimplePaintGDI.webp"
+                                        alt="Simple Paint GDI"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Calculator"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/Calculator"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/Calculator/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="calculator"
+                                        src="./images/calculator-bg.webp"
+                                        alt="Calculator"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Meme Generator"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/MemeGenerator"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/MemeGenerator/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="meme-generator"
+                                        src="./images/meme-gen-bg.webp"
+                                        alt="Meme Generator"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Simple Paint"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/SimplePaint"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://tranphuongdinh.github.io/SimplePaint/"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="paint"
+                                        src="./images/paint-bg.webp"
+                                        alt="Paint"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Weather Forecast"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="./PROJECTS/WEATHER FORECAST APP/index.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="./PROJECTS/WEATHER FORECAST APP/index.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="weather-forecast"
+                                        src="./images/weatherForecast-bg.webp"
+                                        alt="Weather Forecast"
+                                    />
+                                </div>
+                            </li>
+
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Hangman"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="./PROJECTS/HANGMAN/index.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="./PROJECTS/HANGMAN/index.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="hangman"
+                                        src="./images/hangman-bg.webp"
+                                        alt="Hangman"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-name="Flappy Bird"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/SimpleFlappyBird"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="./PROJECTS/FLAPPY BIRD/menu.html"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="flappy-bird"
+                                        src="./images/flappy-bird-bg.webp"
+                                        alt="Flappy Bird"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-name="Social Responsibility - WHAT AND WHY?"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://www.youtube.com/embed/dPnHg6OUIIU"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="social-responsibility"
+                                        src="./images/social-responsibility.webp"
+                                        alt="Social Responsibility - WHAT AND WHY?"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-url=""
+                                data-name="Project Snake - The Game"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://www.youtube.com/embed/OfrRXK3a6pw"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="snake-the-game"
+                                        src="./images/snake-the-game.webp"
+                                        alt="Snake The Game"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="
+                                    all
+                                    others
+                                    galery-item galery-item-tooltip
+                                "
+                                data-name="Coding Flappy Bird in 60 minutes"
+                            >
+                                <div class="item__img">
+                                    <div class="source-demo">
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/SimpleFlappyBird"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-source.png"
+                                                alt="Source"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://www.youtube.com/embed/PdHPwGvnvzI"
+                                            target="_blank"
+                                            class="source-demo__button"
+                                        >
+                                            <img
+                                                src="./images/web-demo.png"
+                                                alt="Demo"
+                                            />
+                                        </a>
+                                    </div>
+                                    <img
+                                        id="flappy-bird-youtube"
+                                        src="./images/flappy-bird-youtube.webp"
+                                        alt="Coding Flappy Bird in 60 minutes"
+                                    />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section contact" id="contact">
+                    <div class="title-flex">
+                        <div class="title-flex__left">
+                            <span>CONTACT</span>
+                            <h3>Get in Touch</h3>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1586865038053!2d106.79692831462344!3d10.875532492254338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCBDxqEgc-G7nyBMaW5oIFRydW5nLCBUaOG7pyDEkOG7qWMsIMSQSFFHIFRQSENNLg!5e0!3m2!1svi!2s!4v1621658184694!5m2!1svi!2s"
+                            allowfullscreen="true"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div class="contact__form">
+                        <form
+                            class="contact-form"
+                            action="https://formspree.io/f/mqkwprkn"
+                            method="POST"
+                            target="_blank"
+                        >
+                            <input
+                                class="input-text"
+                                type="text"
+                                name="name"
+                                placeholder="Your name..."
+                                required
+                            />
+                            <input
+                                class="input-text"
+                                type="email"
+                                name="_replyto"
+                                placeholder="Your email..."
+                                required
+                            />
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Your Message..."
+                                required
+                            ></textarea>
+                            <input
+                                class="button button-submit"
+                                type="submit"
+                                value="Send Message"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+    </body>
+</html>
